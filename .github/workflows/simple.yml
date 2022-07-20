@@ -15,5 +15,5 @@ jobs:
       - name: python test command
         run: |
           import platform
-          print(plaform.processor())
+          print(platform.processor())
         shell: python
