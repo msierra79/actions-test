@@ -3,7 +3,7 @@ name: Shell Commands
 on: [push]
 
 jobs:
-  run-shell-command:
+  run-shell-command:s
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
@@ -12,3 +12,8 @@ jobs:
         run: |
           node -v
           npm -v
+      - name: python test command
+        run: |
+          import platform
+          print(plaform.processor())
+        shell: python
