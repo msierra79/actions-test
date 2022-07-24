@@ -5,8 +5,8 @@ jobs:
   node-version:
     strategy:
       matrix:
-        operating_system: [ubuntu-latest, ubuntu-18.04, windows-latest] 
-        node_version: [6,7,10]
+        operating_system: [ubuntu-latest, windows-latest] 
+        node_version: [6, 7, 10]
         include:
           - operating_system: ubuntu-latest
             node_version: 8
