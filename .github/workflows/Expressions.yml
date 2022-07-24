@@ -4,6 +4,7 @@ on: push
 jobs:
   functions:
     runs-on: ubuntu-18.04
+    if: false
     steps:
       - name: dump functions
         run: |
