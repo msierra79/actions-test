@@ -22,7 +22,7 @@ on:
 jobs:
   run-github-actions:
     runs-on: ubuntu-latest
-    if: False
+    if: false
     steps:
       - name: Simple JS Action
         id: greet

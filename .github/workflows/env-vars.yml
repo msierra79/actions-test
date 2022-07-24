@@ -6,7 +6,7 @@ env:
 jobs:
   decrypt:
     runs-on: ubuntu-latest
-    if: False
+    if: false
     steps:
       - uses: actions/checkout@v1
       - name: Decrypt file
@@ -15,7 +15,7 @@ jobs:
           PASSPHRASE: ${{ secrets.PASSPHRASE }} 
   log-env:
     runs-on: ubuntu-latest
-    if: False
+    if: false
     env:
       JOB_ENV: Avilable to all steps in log-env job
     steps:
