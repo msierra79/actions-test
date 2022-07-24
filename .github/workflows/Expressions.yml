@@ -1,0 +1,13 @@
+name: Expressions
+on: push
+
+jobs:
+  functions:
+    runs-on: ubuntu-16.04
+    steps:
+      - name: dump functions
+        run: |
+          echo ${{ contains('hello', 'll' )}}
+          echo ${{ startsWith('hello', 'he' )}}
+          echo ${{ endsWith('hello', 'lo' )}}
+          echo ${{ format('Hello {0} {1} {2}', 'World', '!', '!' )}}
