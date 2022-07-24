@@ -1,11 +1,11 @@
-name: Shell Commands
+name: Commands on Ubuntu/Windows
 
 on: [push]
 
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
-    if: false
+    #if: false
     steps:
       - name: echo a string
         run: echo "Hello from GitHub"
@@ -20,7 +20,7 @@ jobs:
         shell: python
   run-windows-commands:
     runs-on: windows-latest
-    if: false
+    #if: false
     needs: ["run-shell-command"]
     steps:
       - name: Dirctory PowerShell
