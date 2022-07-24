@@ -21,6 +21,7 @@ jobs:
   run-windows-commands:
     runs-on: windows-latest
     #if: false
+    timeout-minutes: 360
     needs: ["run-shell-command"]
     steps:
       - name: Dirctory PowerShell
