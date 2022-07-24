@@ -11,4 +11,4 @@ jobs:
           echo ${{ startsWith('hello', 'he' )}}
           echo ${{ endsWith('hello', 'lo' )}}
           echo ${{ format('Hello {0} {1} {2}', 'World', '!', '!' )}}
-          ansible-playbook -version
+          ansible-playbook --version
