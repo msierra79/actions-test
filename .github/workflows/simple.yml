@@ -20,6 +20,7 @@ jobs:
         shell: python
   run-windows-commands:
     runs-on: windows-latest
+    if: false
     needs: ["run-shell-command"]
     steps:
       - name: Dirctory PowerShell
