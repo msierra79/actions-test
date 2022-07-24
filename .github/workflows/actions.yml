@@ -8,10 +8,10 @@ on:
 #    - cron: "0/6 * * * *"
   push:
     branches:
-      - master
+      #- master
       - 'feature/*' #matches feature/feaA, feature/feaB
       - 'feature/**' #matches feature/feat/a
-      - '!feature/featC'
+      #- '!feature/featC'
     tags:
       - v1.*
     paths:
